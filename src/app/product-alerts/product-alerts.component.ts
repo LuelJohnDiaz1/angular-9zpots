@@ -7,7 +7,7 @@ import { Product } from '../products';
   styleUrls: ['./product-alerts.component.css'],
 })
 export class ProductAlertsComponent {
-  @Input() product: Product | undefined;
-  @Output() notify = new EventEmitter();
+  @Input() product: Product | undefined; //Pass data to a child component
+  @Output() notify = new EventEmitter(); // Pass data to a parent component
 }
 
